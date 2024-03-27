@@ -1,8 +1,11 @@
 import {Menu, Upload, Bell, User, Mic, Search, BadgeHelp, Swords} from "lucide-react"
 import logo from "../assets/dd2.jpg"
 import  Button  from "../components/Button"
+import { useState } from "react"
 
 const PageHeader = () => {
+  const [showFullWidthSearch, setShowFullWidthSearch] = useState(false)
+  
  return (
   <div className="flex gap-10 lg:gap-20 justify-between pt-2 mb-6 mx-4">
    <div className="flex gap-4 items-center flex-shrink-0">
